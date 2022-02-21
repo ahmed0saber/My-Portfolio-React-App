@@ -1,0 +1,35 @@
+.bottom-nav{
+    position: fixed;
+    bottom: 0px;
+    background-color: var(--nav);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 14px 2px;
+    display: none;
+    z-index: 99;
+}
+.bottom-nav .fa{
+    font-size: 26px;
+    color: var(--font);
+}
+.bottom-nav a.active .fa{
+    color: var(--pri);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.bottom-nav a:hover .fa{
+    color: var(--pri);
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 900px) {
+    .bottom-nav{
+        display: flex;
+    }
+}

@@ -1,0 +1,23 @@
+.page-footer{
+    background-color: var(--nav);
+    color: var(--font);
+    padding: 10px;
+}
+.footer-copyright{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.by{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4px;
+}
+
+@media screen and (max-width: 900px) {
+    .page-footer{
+        padding: 10px 10px 64px 10px;
+    }
+}

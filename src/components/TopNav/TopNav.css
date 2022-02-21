@@ -1,0 +1,152 @@
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+nav{
+    padding: 0px 0px 0px 10px;
+    background-color: var(--nav);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+nav .logo{
+    font-size: 26px;
+    color: var(--font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav .logo a{
+    animation: reArrange 1s linear 1;
+    -webkit-animation: reArrange 1s linear 1;
+    letter-spacing: 0.2px;
+    cursor: default;
+    color: var(--font);
+    text-decoration: none;
+}
+nav .logo a:hover{
+    animation: reArrange 1.2s linear infinite;
+    -webkit-animation: reArrange 1.2s linear infinite;
+}
+@keyframes reArrange {
+    0%{
+        letter-spacing: 0.2px;
+    }
+    50%{
+        letter-spacing: 3px;
+    }
+    100%{
+        letter-spacing: 0.2px;
+    }
+}
+nav .logo a span{
+    color: var(--pri);
+    transition-duration: 0.4s;
+}
+nav .logo a span:hover{
+    color: var(--font);
+}
+nav .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav .links.opened{
+    z-index: 1;
+    display: flex;
+    animation: navOpen 0.4s linear 1;
+    -webkit-animation: navOpen 0.4s linear 1;
+}
+@keyframes navOpen {
+    0%{
+        transform: translateY(-600px);
+        -webkit-transform: translateY(-600px);
+        -moz-transform: translateY(-600px);
+        -ms-transform: translateY(-600px);
+        -o-transform: translateY(-600px);
+    }
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+}
+nav .link{
+    color: var(--font);
+    text-decoration: none;
+    padding: 2px 10px;
+}
+nav .link.active{
+    color: var(--pri);
+}
+nav .link:hover{
+    color: var(--pri);
+    opacity: 0.7;
+}
+nav .nav-btn{
+    display: none;
+}
+nav .nav-btn button{
+    min-width: 60px;
+    background: var(--nav);
+    border: 2px solid var(--font);
+    padding: 0px 8px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+nav .nav-btn button:hover{
+    border: 2px solid var(--pri);
+}
+nav .nav-btn button:hover i.fa{
+    color: var(--pri);
+}
+nav .nav-btn button:active{
+    background: var(--pri);
+}
+nav .nav-btn button:active i.fa{
+    background: var(--pri);
+}
+nav .nav-btn i.fa{
+    color: var(--font);
+    background: var(--nav);
+    font-size: 24px;
+    padding: 8px;
+}
+nav .links a i{
+    margin: 0px 2px;
+}
+
+@media screen and (max-width: 900px) {
+    nav.opened{
+        display: flex;
+    }
+    nav .links{
+        display: none;
+        position: absolute;
+        top: 100%;
+        background-color: var(--nav);
+        width: 100%;
+        left: 0;
+    }
+    nav .links a{
+        display: block;
+        margin: 24px 6px;
+        font-size: 20px;
+    }
+    nav .links a i{
+        margin: 0px 4px;
+        display: inline-block;
+        width: 50px;
+        text-align: center;
+    }
+    nav .nav-btn{
+        display: block;
+    }
+}
