@@ -12,7 +12,7 @@ class Home extends Component {
                             <h3>Ahmed Saber</h3>
                         </section>
                         <section>
-                            <p>Full Stack Web Developer</p>
+                            <p>Frontend Web Developer</p>
                         </section>
                         <section className="social-media-icons">
                             <NavLink Style="--ahmed: #00e" to="/"><i className="fa fa-facebook"></i></NavLink>

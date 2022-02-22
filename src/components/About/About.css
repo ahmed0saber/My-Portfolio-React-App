@@ -2,10 +2,9 @@ main.about{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     min-height: 100vh;
     width: 100%;
-    padding: 60px 0;
+    padding: 100px 0;
 }
 main.about h1{
     color: var(--pri);
@@ -13,7 +12,116 @@ main.about h1{
     letter-spacing: 1px;
     margin: 10px auto;
 }
+main.about h2{
+    color: var(--pri);
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin: 10px auto;
+}
 main.about p{
     color: var(--font);
     letter-spacing: 0.6px;
+}
+
+.right-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px 0px 40px 0px;
+    flex-wrap: nowrap;
+}
+.left-section{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.left-section img{
+    width: 100%;
+    margin: 0px auto 16px auto;
+}
+.left-section p, .left-section h2{
+    margin: 2px 0 6px 0;
+}
+.right-section{
+    width: 60%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0px auto;
+}
+.right-section p, .right-section h2{
+    width: 100%;
+    margin: 2px 0 6px 0;
+}
+main.about .text-center{
+    text-align: center;
+}
+
+
+main.about .skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+main.about .skill{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 0 26px;
+    border: 2px solid var(--pri);
+    height: 80px;
+    box-sizing: border-box;
+}
+main.about .skill div{
+    width: fit-content;
+    text-align: center;
+}
+main.about .skill div img{
+    width: 50px;
+    padding: 1px 12px 1px 1px;
+}
+main.about .skill h4{
+    color: var(--pri);
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .right-left{
+        flex-direction: column;
+    }
+    .right-section{
+        width: 96%;
+    }
+    .left-section{
+        width: 90%;
+    }
+    .left-section img{
+        width: 100%;
+    }
+
+    main.about .skills-container{
+        flex-direction: column;
+    }
+    main.about .skill{
+        padding: 10px;
+        height: 86px;
+    }
+    main.about .skill div{
+        width: 100px;
+    }
+    main.about .skill div img{
+        height: 50px;
+        width: auto;
+        padding: 1px;
+    }
 }
