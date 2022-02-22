@@ -4,12 +4,9 @@ import "./Blog.css"
 class Blog extends Component {
     render(){
         return (
-            <main>
-                <p>Blog</p>
-                <p>Blog</p>
-                <p>Blog</p>
-                <p>Blog</p>
-                <p>Blog</p>
+            <main className="blog">
+                <h1>Blog</h1>
+                <p>Here I talk about my interests</p>
             </main>
         )
     }

@@ -1,4 +1,4 @@
-main.blog{
+main.projects{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,13 +7,13 @@ main.blog{
     width: 100%;
     padding: 60px 0;
 }
-main.blog h1{
+main.projects h1{
     color: var(--pri);
     font-size: 40px;
     letter-spacing: 1px;
     margin: 10px auto;
 }
-main.blog p{
+main.projects p{
     color: var(--font);
     letter-spacing: 0.6px;
 }

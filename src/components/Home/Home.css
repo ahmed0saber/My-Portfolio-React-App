@@ -191,6 +191,7 @@ section.container.home .resizable p{
     -moz-transition: transform 0.4s;
     -ms-transition: transform 0.4s;
     -o-transition: transform 0.4s;
+    /*border: 2px solid var(--nav);*/
 }
 .social-media-icons a:hover{
     transform: rotate(-45deg);
@@ -207,6 +208,7 @@ section.container.home .resizable p{
     -moz-transform: rotate(45deg) scale(1.32);
     -ms-transform: rotate(45deg) scale(1.32);
     -o-transform: rotate(45deg) scale(1.32);
+    /*border: 2px solid var(--ahmed);*/
 }
 
 section.container.home .home-btns{

@@ -1,3 +1,19 @@
-p{
+main.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 60px 0;
+}
+main.about h1{
+    color: var(--pri);
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 10px auto;
+}
+main.about p{
     color: var(--font);
+    letter-spacing: 0.6px;
 }

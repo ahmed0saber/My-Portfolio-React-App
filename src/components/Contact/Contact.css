@@ -1,3 +1,81 @@
-p{
+main.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 60px 0;
+}
+main.contact section.flexed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+main.contact section.flexed div{
+    padding: 10px;
+    margin: 10px auto;
+}
+main.contact section.flexed div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main.contact h1{
+    color: var(--pri);
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 10px auto;
+}
+main.contact p{
     color: var(--font);
+    letter-spacing: 0.6px;
+}
+main.contact .social-media-icons{
+    margin: 30px auto;
+}
+main.contact form p{
+    margin: 8px;
+}
+main.contact form input[type="text"], main.contact form input[type="email"], main.contact form textarea{
+    width: 96%;
+    height: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 8px;
+    border: none;
+    outline: none;
+    background-color: var(--nav);
+    color: var(--pri);
+}
+main.contact form input[type="text"]:focus, main.contact form input[type="email"]:focus, main.contact form textarea:focus{
+    outline: 2px solid var(--pri);
+}
+main.contact form textarea{
+    height: 120px;
+    resize: none;
+}
+main.contact form input[type="button"]{
+    padding: 10px 30px;
+    font-size: 19px;
+    background-color: var(--pri);
+    color: var(--nav);
+    border: none;
+    width: 96%;
+    box-sizing: border-box;
+    margin: 4px;
+}
+main.contact form input[type="button"]:hover{
+    opacity: 0.8;
+}
+main.contact form input[type="button"]:active{
+    background-color: var(--nav);
+    color: var(--pri);
+}
+
+@media screen and (max-width: 900px) {
+    main.contact section.flexed{
+        flex-direction: column;
+    }
 }

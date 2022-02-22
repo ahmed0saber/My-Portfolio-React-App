@@ -15,7 +15,7 @@ class Home extends Component {
                             <p>Full Stack Web Developer</p>
                         </section>
                         <section className="social-media-icons">
-                            <NavLink Style="--ahmed: #00c" to="/"><i className="fa fa-facebook"></i></NavLink>
+                            <NavLink Style="--ahmed: #00e" to="/"><i className="fa fa-facebook"></i></NavLink>
                             <NavLink Style="--ahmed: #0c0" to="/"><i className="fa fa-whatsapp"></i></NavLink>
                             <NavLink Style="--ahmed: #0bb" to="/"><i className="fa fa-linkedin"></i></NavLink>
                             <NavLink Style="--ahmed: #b0b" to="/"><i className="fa fa-github"></i></NavLink>
