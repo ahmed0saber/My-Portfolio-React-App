@@ -17,3 +17,58 @@ main.blog p{
     color: var(--font);
     letter-spacing: 0.6px;
 }
+.post{
+    position: relative;
+    width: 96%;
+    max-width: 380px;
+    min-width: 200px;
+    overflow: hidden;
+    min-height: 240px;
+    margin: 10px;
+    transition-duration: 0.3s;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: var(--nav);
+    padding: 10px;
+    text-align: left;
+}
+.post:hover img{
+    transform: translateY(-15px) scale(1.2);
+    -webkit-transform: translateY(-15px) scale(1.2);
+    -moz-transform: translateY(-15px) scale(1.2);
+    -ms-transform: translateY(-15px) scale(1.2);
+    -o-transform: translateY(-15px) scale(1.2);
+}
+.post img{
+    width: 100%;
+    transition-duration: 0.4s;
+}
+.post h3{
+    color: var(--font);
+    font-size: 22px;
+    margin: 2px 0 6px 0;
+}
+.post a{
+    text-decoration: none;
+    padding: 8px 24px;
+    margin: 12px 0 4px 0;
+    display: inline-block;
+    background-color: var(--pri);
+    color: var(--nav);
+    font-size: 18px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.post a:active{
+    color: var(--pri);
+    background-color: var(--background);
+}
+.post a:hover{
+    opacity: 0.8;
+}

@@ -6,17 +6,14 @@ class OnePost extends Component {
         const posts = this.props.data
         const allPosts = posts.map( post => {
             return(
-                <div className="project" key={post.id}>
-                    <span className="fa fa-arrow-right"></span>
+                <div className="post" key={post.id}>
                     <img src={post.img} alt="XO Online"/>
-                    <div className="project-back">
-                        <div>
-                            <h3>{post.title}</h3>
-                            <div dangerouslySetInnerHTML={{ __html: post.description }} />
-                            <NavLink to={post.url}>Read More</NavLink>
-                        </div>
-                        <Outlet/>
+                    <div>
+                        <h3>{post.title}</h3>
+                        <div dangerouslySetInnerHTML={{ __html: post.description }} />
+                        <NavLink to={post.url}>Read More</NavLink>
                     </div>
+                    <Outlet/>
                 </div>
             )
         })

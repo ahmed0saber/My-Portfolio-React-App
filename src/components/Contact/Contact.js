@@ -23,7 +23,7 @@ class Contact extends Component {
             body: JSON.stringify(this.state)
         })
         .then(response => console.log(response))
-        alert("Your messages has been sent successfully !");
+        alert("Your message has been sent successfully !");
         this.setState({
             name: '',
             email: '',
