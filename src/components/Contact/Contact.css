@@ -34,10 +34,10 @@ main.contact p{
 main.contact .social-media-icons{
     margin: 30px auto;
 }
-main.contact form p{
+main.contact .form p{
     margin: 8px;
 }
-main.contact form input[type="text"], main.contact form input[type="email"], main.contact form textarea{
+main.contact .form input[type="text"], main.contact .form input[type="email"], main.contact .form textarea{
     width: 96%;
     height: 40px;
     padding: 5px;
@@ -49,14 +49,14 @@ main.contact form input[type="text"], main.contact form input[type="email"], mai
     background-color: var(--nav);
     color: var(--pri);
 }
-main.contact form input[type="text"]:focus, main.contact form input[type="email"]:focus, main.contact form textarea:focus{
+main.contact .form input[type="text"]:focus, main.contact .form input[type="email"]:focus, main.contact .form textarea:focus{
     outline: 2px solid var(--pri);
 }
-main.contact form textarea{
+main.contact .form textarea{
     height: 120px;
     resize: none;
 }
-main.contact form input[type="button"]{
+main.contact .form button{
     padding: 10px 30px;
     font-size: 19px;
     background-color: var(--pri);
@@ -66,10 +66,10 @@ main.contact form input[type="button"]{
     box-sizing: border-box;
     margin: 4px;
 }
-main.contact form input[type="button"]:hover{
+main.contact .form button:hover{
     opacity: 0.8;
 }
-main.contact form input[type="button"]:active{
+main.contact .form button:active{
     background-color: var(--nav);
     color: var(--pri);
 }
