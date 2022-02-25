@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import OnePost from "./post"
-import "./Blog.css"
+import { useParams } from "react-router-dom";
 
-class Blog extends Component {
+class CurrentBlog extends Component {
     state = {
         posts: [
             {
@@ -26,18 +25,48 @@ class Blog extends Component {
                 "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam illum doloribus modi nihil libero quibusdam repellendus enim optio animi exercitationem.</p>",
                 "content": "<h3>To Be Continued...</h3>"
             }
-        ]
+        ],
+        post: {}
     }
+
+    componentDidMount() {
+        const id = this.props.params.id
+        console.log(id)
+        for(let i=0; i<this.state.posts.length; i++) {
+            if(this.state.posts[i].id === id){
+                console.log(this.state.posts[i])
+                this.setState({
+                    post: this.state.posts[i]
+                })
+            }
+        }
+    }
+
     render(){
         return (
             <main className="projects">
-                <h1>My Blog</h1>
                 <section className="projects-container">
-                    <OnePost data={this.state.posts}/>
+                    <div className="post currentPost" key={this.state.post.id}>
+                        <img src={this.state.post.img} alt="Post"/>
+                        <div>
+                            <h3>{this.state.post.title}</h3>
+                            <div dangerouslySetInnerHTML={{ __html: this.state.post.description }} />
+                            <div dangerouslySetInnerHTML={{ __html: this.state.post.content }} />
+                        </div>
+                    </div>
                 </section>
             </main>
         )
     }
 }
 
-export default Blog;
+const DetermineBlog  = (props) => {
+    const param = useParams()
+    console.log(param)
+
+    return (
+        <CurrentBlog params={param}/>
+    )
+}
+
+export default DetermineBlog ;

@@ -7,11 +7,11 @@ class OnePost extends Component {
         const allPosts = posts.map( post => {
             return(
                 <div className="post" key={post.id}>
-                    <img src={post.img} alt="XO Online"/>
+                    <img src={post.img} alt="Post"/>
                     <div>
                         <h3>{post.title}</h3>
                         <div dangerouslySetInnerHTML={{ __html: post.description }} />
-                        <NavLink to={post.url}>Read More</NavLink>
+                        <NavLink to={`/blog/${post.id}`}>Read More</NavLink>
                     </div>
                     <Outlet/>
                 </div>

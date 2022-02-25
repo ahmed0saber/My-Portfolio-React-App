@@ -35,16 +35,24 @@ main.blog p{
     padding: 10px;
     text-align: left;
 }
-.post:hover img{
+.post:not(.currentPost):hover img{
     transform: translateY(-15px) scale(1.2);
     -webkit-transform: translateY(-15px) scale(1.2);
     -moz-transform: translateY(-15px) scale(1.2);
     -ms-transform: translateY(-15px) scale(1.2);
     -o-transform: translateY(-15px) scale(1.2);
 }
+.currentPost{
+    max-width: 2000px;
+}
 .post img{
     width: 100%;
     transition-duration: 0.4s;
+    border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
 }
 .post h3{
     color: var(--font);
@@ -71,4 +79,11 @@ main.blog p{
 }
 .post a:hover{
     opacity: 0.8;
+}
+.currentPost ol{
+    color: var(--font);
+    margin: 0 0 0 20px;
+}
+.currentPost h5, .currentPost h3{
+    color: var(--pri);
 }

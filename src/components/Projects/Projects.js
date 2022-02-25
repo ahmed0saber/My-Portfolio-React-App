@@ -30,7 +30,7 @@ class Projects extends Component {
                 id: "4",
                 title: "Online Quiz",
                 description: "It's just an one-page web-skills quiz with leaderboard. Using Leaderboard API created by Ahmed Yasser.",
-                url: "https://ahmed0saber.github.io/ehrth/HTML_Test.html",
+                url: "https://ahmed0saber.github.io/online-quiz/html.html",
                 img: "./images/projects/oq.png"
             },
             {
@@ -42,17 +42,17 @@ class Projects extends Component {
             },
             {
                 id: "6",
-                title: "Image Store",
+                title: "Photo Store",
                 description: "An image store using unsplashAPI where you can search for images and download them.",
-                url: "https://ahmed0saber.github.io/ehrth/image_store.html",
-                img: "./images/projects/is.png"
+                url: "https://ahmed0saber.github.io/photostore/",
+                img: "./images/projects/ps.png"
             },
             {
                 id: "7",
-                title: "Secret Space",
-                description: "A website where you can send and receive messages without mentioning the message-sender name. Backend by Mohammed El Ganainy.",
-                url: "https://secret-space.herokuapp.com/",
-                img: "./images/projects/ss.png"
+                title: "Web Pigeon",
+                description: "A website where you can send and receive messages without mentioning the message-sender name.",
+                url: "https://webpigeon.000webhostapp.com/",
+                img: "./images/projects/wp.png"
             },
             {
                 id: "8",
@@ -74,6 +74,69 @@ class Projects extends Component {
                 description: "A Live Code Editor for Web Development with HTML, CSS, JavaScript.",
                 url: "https://ahmed0saber.github.io/bootstrap-projects/live%20web%20code%20editor/",
                 img: "./images/projects/lce.png"
+            },
+            {
+                id: "11",
+                title: "Reen",
+                description: "A fully animated responsive landing page.",
+                url: "https://ahmed0saber.github.io/landing-page/",
+                img: "./images/projects/reen.png"
+            },
+            {
+                id: "12",
+                title: "Coffee Time",
+                description: "A fully animated responsive landing page.",
+                url: "https://ahmed0saber.github.io/coffee-time/",
+                img: "./images/projects/ct.png"
+            },
+            {
+                id: "13",
+                title: "Tenzi Game",
+                description: "A simple web game.",
+                url: "https://ahmed0saber.github.io/tenzi-game/",
+                img: "./images/projects/tg.png"
+            },
+            {
+                id: "14",
+                title: "Product List",
+                description: "A simple react app to calculate total price of some products.",
+                url: "https://product-list.onrender.com/",
+                img: "./images/projects/pl.png"
+            },
+            {
+                id: "15",
+                title: "Simple Calculator",
+                description: "A simple calculator built with react.",
+                url: "https://simple-calculator-nu8b.onrender.com/",
+                img: "./images/projects/sc.png"
+            },
+            {
+                id: "16",
+                title: "Quote Generator",
+                description: "A simple quote generator built with react.",
+                url: "https://quote-generator-niu5.onrender.com/",
+                img: "./images/projects/qg.png"
+            },
+            {
+                id: "17",
+                title: "MarkDown Previewer",
+                description: "A simple MarkDown Previewer that converts MarkDown to HTML, built with react.",
+                url: "https://markdown-previewer.onrender.com/",
+                img: "./images/projects/mp.png"
+            },
+            {
+                id: "18",
+                title: "Drum Machine",
+                description: "A simple Drum Machine built with react.",
+                url: "https://drum-machine.onrender.com/",
+                img: "./images/projects/dm.png"
+            },
+            {
+                id: "19",
+                title: "Old Portfolio",
+                description: "The portfolio I created before that one you are on now, built with bootstrap.",
+                url: "https://ahmed0saber.github.io/bootstrap-projects/portfolio/",
+                img: "./images/projects/op.png"
             }
         ]
     }
