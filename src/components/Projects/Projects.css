@@ -28,6 +28,8 @@ main.projects .project{
     width: 96%;
     max-width: 380px;
     min-width: 200px;
+    overflow: hidden;
+    height: 240px;
     margin: 10px;
     transition-duration: 0.3s;
     border-radius: 4px;
@@ -56,12 +58,12 @@ main.projects .project span{
     -o-border-radius: 0px 2px 0px 0px;
 }
 main.projects .project img{
-    width: 100%;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    height: 100%;
 }
 main.projects .project .project-back{
     position: absolute;

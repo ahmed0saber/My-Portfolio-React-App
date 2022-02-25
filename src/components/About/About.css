@@ -59,6 +59,24 @@ main.about p{
     width: 100%;
     margin: 2px 0 6px 0;
 }
+.right-section div{
+    margin: 20px 0;
+}
+.right-section a{
+    padding: 8px 24px;
+    text-decoration: none;
+    background-color: var(--pri);
+    color: var(--nav);
+    font-size: 18px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.right-section a:hover{
+    opacity: 0.8;
+}
 main.about .text-center{
     text-align: center;
 }
@@ -76,9 +94,25 @@ main.about .skill{
     align-items: center;
     margin: 10px;
     padding: 0 26px;
-    border: 2px solid var(--pri);
     height: 80px;
     box-sizing: border-box;
+    background-color: var(--nav);
+    transition-duration: 0.2s;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+main.about .skill:hover{
+    background-color: var(--pri);
+}
+main.about .skill:hover h4{
+    color: var(--nav);
+}
+main.about .skill:hover img{
+    filter: drop-shadow(0px 0px 1px var(--font));
+    -webkit-filter: drop-shadow(0px 0px 1px var(--font));
 }
 main.about .skill div{
     width: fit-content;
@@ -87,10 +121,14 @@ main.about .skill div{
 main.about .skill div img{
     width: 50px;
     padding: 1px 12px 1px 1px;
+    transition-duration: 0.2s;
+    filter: drop-shadow(0px 0px 1px var(--background));
+    -webkit-filter: drop-shadow(0px 0px 1px var(--background));
 }
 main.about .skill h4{
     color: var(--pri);
     font-size: 20px;
+    transition-duration: 0.2s;
 }
 
 
