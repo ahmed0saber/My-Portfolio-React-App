@@ -82,7 +82,7 @@ main.blog p{
 }
 .currentPost ol{
     color: var(--font);
-    margin: 0 0 0 20px;
+    margin: 0 0 0 14px;
 }
 .currentPost h5, .currentPost h3{
     color: var(--pri);

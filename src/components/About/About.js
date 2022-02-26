@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 import "./About.css"
 
 class About extends Component {
@@ -32,7 +31,7 @@ class About extends Component {
                         <p>2&#41; FreeCodeCamp certified Frontend Web Developer</p>
                         <p>3&#41; Egypt fwd certified Web Designer</p>
                         <div>
-                            <NavLink to="/">View More</NavLink>
+                            <a href="https://github.com/ahmed0saber/certifications" rel="noreferrer" target="_blank">View More</a>
                         </div>
                     </section>
                 </section>

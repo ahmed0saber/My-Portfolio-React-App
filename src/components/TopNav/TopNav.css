@@ -10,6 +10,12 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 10px;
+
+    /* Glassmorphism */
+    background: rgb(38, 40, 52, 0.66);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
 }
 nav .logo{
     font-size: 26px;
@@ -58,6 +64,12 @@ nav .links.opened{
     display: flex;
     animation: navOpen 0.4s linear 1;
     -webkit-animation: navOpen 0.4s linear 1;
+
+    /* Glassmorphism */
+    background: rgb(38, 40, 52, 0.66);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
 }
 @keyframes navOpen {
     0%{
@@ -100,6 +112,9 @@ nav .nav-btn button{
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+
+    /* Glassmorphism */
+    background-color: #0000;
 }
 nav .nav-btn button:hover{
     border: 2px solid var(--pri);
@@ -118,6 +133,9 @@ nav .nav-btn i.fa{
     background: var(--nav);
     font-size: 24px;
     padding: 8px;
+
+    /* Glassmorphism */
+    background-color: #0000;
 }
 nav .links a i{
     margin: 0px 2px;

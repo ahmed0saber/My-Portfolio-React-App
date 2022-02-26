@@ -42,6 +42,24 @@ main.about p{
 .left-section img{
     width: 100%;
     margin: 0px auto 16px auto;
+    transform: scale(1) translateY(0);
+    -webkit-transform: scale(1) translateY(0);
+    -moz-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    -o-transform: scale(1) translateY(0);
+    transition-duration: 0.3s;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.left-section img:hover{
+    transform: scale(1.05) translateY(-10px);
+    -webkit-transform: scale(1.05) translateY(-10px);
+    -moz-transform: scale(1.05) translateY(-10px);
+    -ms-transform: scale(1.05) translateY(-10px);
+    -o-transform: scale(1.05) translateY(-10px);
 }
 .left-section p, .left-section h2{
     margin: 2px 0 6px 0;
@@ -58,6 +76,33 @@ main.about p{
 .right-section p, .right-section h2{
     width: 100%;
     margin: 2px 0 6px 0;
+}
+.right-section h2:hover i.fa{
+    animation: goAway 1s 1 alternate;
+    -webkit-animation: goAway 1.2s 1;
+}
+@keyframes goAway {
+    0%{
+        transform: translateX(0) rotate(0deg);
+        -webkit-transform: translateX(0) rotate(0deg);
+        -moz-transform: translateX(0) rotate(0deg);
+        -ms-transform: translateX(0) rotate(0deg);
+        -o-transform: translateX(0) rotate(0deg);
+    }
+    50%{
+        transform: translateX(50px) rotate(180deg);
+        -webkit-transform: translateX(50px) rotate(180deg);
+        -moz-transform: translateX(50px) rotate(180deg);
+        -ms-transform: translateX(50px) rotate(180deg);
+        -o-transform: translateX(50px) rotate(180deg);
+}
+    100%{
+        transform: translateX(0) rotate(360deg);
+        -webkit-transform: translateX(0) rotate(360deg);
+        -moz-transform: translateX(0) rotate(360deg);
+        -ms-transform: translateX(0) rotate(360deg);
+        -o-transform: translateX(0) rotate(360deg);
+}
 }
 .right-section div{
     margin: 20px 0;
