@@ -44,7 +44,7 @@ class CurrentBlog extends Component {
 
     render(){
         return (
-            <main className="projects">
+            <main className="projects" data-aos="fade-right">
                 <section className="projects-container">
                     <div className="post currentPost" key={this.state.post.id}>
                         <img src={this.state.post.img} alt="Post"/>

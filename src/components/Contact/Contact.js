@@ -32,7 +32,7 @@ class Contact extends Component {
 
     render(){
         return (
-            <main className="contact">
+            <main className="contact" data-aos="fade-right">
                 <section className="flexed">
                     <div>
                         <h1>Contact me</h1>

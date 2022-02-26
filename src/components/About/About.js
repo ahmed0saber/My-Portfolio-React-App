@@ -4,7 +4,7 @@ import "./About.css"
 class About extends Component {
     render(){
         return (
-            <main className="about">
+            <main className="about" data-aos="fade-right">
                 <section className="right-left">
                     <section className="left-section">
                         <img src="./images/about.jpg" alt="Ahmed Saber, ahmed0saber"/>
@@ -41,7 +41,7 @@ class About extends Component {
                     <section className="skills-container">
 
                         <div>
-                            <div class="skill">
+                            <div className="skill" data-aos="fade-right">
                                 <div>
                                     <img src="./images/skills/html.png" alt="HTML5"/>
                                 </div>
@@ -50,7 +50,7 @@ class About extends Component {
                         </div>
 
                         <div>
-                            <div class="skill">
+                            <div className="skill" data-aos="fade-right">
                                 <div>
                                     <img src="./images/skills/css.png" alt="CSS3"/>
                                 </div>
@@ -59,7 +59,7 @@ class About extends Component {
                         </div>
 
                         <div>
-                            <div class="skill">
+                            <div className="skill" data-aos="fade-right">
                                 <div>
                                     <img src="./images/skills/js.jpg" alt="JavaScript (ES6)"/>
                                 </div>
@@ -68,7 +68,7 @@ class About extends Component {
                         </div>
 
                         <div>
-                            <div class="skill">
+                            <div className="skill" data-aos="fade-right">
                                 <div>
                                     <img src="./images/skills/bootstrap.png" alt="Bootstrap"/>
                                 </div>
@@ -77,7 +77,7 @@ class About extends Component {
                         </div>
 
                         <div>
-                            <div class="skill">
+                            <div className="skill" data-aos="fade-right">
                                 <div>
                                     <img src="./images/skills/sass.png" alt="Sass"/>
                                 </div>
@@ -86,7 +86,7 @@ class About extends Component {
                         </div>
 
                         <div>
-                            <div class="skill">
+                            <div className="skill" data-aos="fade-right">
                                 <div>
                                     <img src="./images/skills/jquery.png" alt="jQuery"/>
                                 </div>
@@ -95,7 +95,7 @@ class About extends Component {
                         </div>
 
                         <div>
-                            <div class="skill">
+                            <div className="skill" data-aos="fade-right">
                                 <div>
                                     <img src="./images/skills/electron.png" alt="ElectronJS"/>
                                 </div>
@@ -104,7 +104,7 @@ class About extends Component {
                         </div>
 
                         <div>
-                            <div class="skill">
+                            <div className="skill" data-aos="fade-right">
                                 <div>
                                     <img src="./images/skills/react.png" alt="React"/>
                                 </div>
@@ -113,7 +113,7 @@ class About extends Component {
                         </div>
 
                         <div>
-                            <div class="skill">
+                            <div className="skill" data-aos="fade-right">
                                 <div>
                                     <img src="./images/skills/pugjs.png" alt="Pug"/>
                                 </div>
@@ -122,7 +122,7 @@ class About extends Component {
                         </div>
 
                         <div>
-                            <div class="skill">
+                            <div className="skill" data-aos="fade-right">
                                 <div>
                                     <img src="./images/skills/matcss.png" alt="Materialize"/>
                                 </div>

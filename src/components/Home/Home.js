@@ -4,7 +4,7 @@ import "./Home.css"
 class Home extends Component {
     render(){
         return (
-            <main>
+            <main data-aos="fade-right">
                 <section className="container home">
                     <section className="resizable">
                         <section>

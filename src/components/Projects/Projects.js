@@ -142,7 +142,7 @@ class Projects extends Component {
     }
     render(){
         return (
-            <main className="projects">
+            <main className="projects" data-aos="fade-right">
                 <h1>My Projects</h1>
                 <section className="projects-container">
                     <OneProject data={this.state.projects}/>

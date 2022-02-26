@@ -7,7 +7,7 @@ class OneProject extends Component {
             // <NavLink to={project.url}>View a demo</NavLink>
             // <a onClick={()=> window.open(project.url, "_blank")}>View a demo</a>
             return(
-                <div className="project" key={project.id}>
+                <div className="project" key={project.id} data-aos="fade-right">
                     <span className="fa fa-arrow-right"></span>
                     <img src={project.img} alt="XO Online"/>
                     <div className="project-back">

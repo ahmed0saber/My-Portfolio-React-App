@@ -6,7 +6,7 @@ class OnePost extends Component {
         const posts = this.props.data
         const allPosts = posts.map( post => {
             return(
-                <div className="post" key={post.id}>
+                <div className="post" key={post.id} data-aos="fade-right">
                     <img src={post.img} alt="Post"/>
                     <div>
                         <h3>{post.title}</h3>
