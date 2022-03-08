@@ -16,18 +16,22 @@ class Contact extends Component {
     }
 
     formSubmit = () => {
-        fetch('https://formsubmit.co/ajax/ahmed0saber33@gmail.com', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(this.state)
-        })
-        .then(response => console.log(response))
-        alert("Your message has been sent successfully !");
-        this.setState({
-            name: '',
-            email: '',
-            msg: ''
-        })
+        if(this.state.name == '' | this.state.email == '' | this.state.msg == ''){
+            alert("Please fill all fields.")
+        }else{
+            fetch('https://formsubmit.co/ajax/ahmed0saber33@gmail.com', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(this.state)
+            })
+            .then(response => console.log(response))
+            alert("Your message has been sent successfully !");
+            this.setState({
+                name: '',
+                email: '',
+                msg: ''
+            })
+        }
     }
 
     render(){

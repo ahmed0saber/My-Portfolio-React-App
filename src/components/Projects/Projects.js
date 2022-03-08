@@ -21,7 +21,7 @@ class Projects extends Component {
             },
             {
                 id: "3",
-                title: "Ask-Bin",
+                title: "Ask Bin",
                 description: "Ask-Bin is my first Full Stack website. It's where users can create {forms, quizzes, tests} , share them with people and receive their answers.",
                 url: "https://ask-bin.000webhostapp.com/home.php",
                 img: "./images/projects/ab.png"
@@ -137,6 +137,20 @@ class Projects extends Component {
                 description: "A simple calculator built with react.",
                 url: "https://simple-calculator-nu8b.onrender.com/",
                 img: "./images/projects/sc.png"
+            },
+            {
+                id: "20",
+                title: "Clipboard Landing Page",
+                description: "A simple landing page from frontend mentor challenges.",
+                url: "https://ahmed0saber.github.io/GDSC-Kafr-El-Sheikh/4-Landing-Page/",
+                img: "./images/projects/cb.png"
+            },
+            {
+                id: "21",
+                title: "Dashboard",
+                description: "A simple dashboard built with the help of chart.js.",
+                url: "https://ahmed0saber.github.io/data-visualization-with-D3-and-chart/Chart-Projects/1-dashboard/",
+                img: "./images/projects/db.png"
             }
         ]
     }

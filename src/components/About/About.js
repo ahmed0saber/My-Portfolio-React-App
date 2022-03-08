@@ -130,6 +130,51 @@ class About extends Component {
                             </div>
                         </div>
 
+                        <div>
+                            <div className="skill" data-aos="fade-right">
+                                <div>
+                                    <img src="./images/skills/d3.png" alt="D3JS"/>
+                                </div>
+                                <h4>D3.js</h4>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className="skill" data-aos="fade-right">
+                                <div>
+                                    <img src="./images/skills/chartjs.svg" alt="ChartJS"/>
+                                </div>
+                                <h4>Chart.js</h4>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className="skill" data-aos="fade-right">
+                                <div>
+                                    <img src="./images/skills/json.png" alt="JSON"/>
+                                </div>
+                                <h4>JSON</h4>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className="skill" data-aos="fade-right">
+                                <div>
+                                    <img src="./images/skills/ts.png" alt="TypeScript"/>
+                                </div>
+                                <h4>TypeScript</h4>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className="skill" data-aos="fade-right">
+                                <div>
+                                    <img src="./images/skills/redux.png" alt="Redux"/>
+                                </div>
+                                <h4>Redux</h4>
+                            </div>
+                        </div>
+
                     </section>
                 </section>
             </main>
