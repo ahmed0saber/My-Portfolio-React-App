@@ -72,7 +72,7 @@ class Projects extends Component {
                 id: "10",
                 title: "Puzzle 2048",
                 description: "A game created by me, supported by leaderboard API which is created by Ahmed Yasser.",
-                url: "https://ahmed0saber.github.io/puzzle-2048/",
+                url: "https://puzzle-2048.onrender.com/",
                 img: "./images/projects/p2.png"
             },
             {
@@ -151,6 +151,13 @@ class Projects extends Component {
                 description: "A simple dashboard built with the help of chart.js.",
                 url: "https://ahmed0saber.github.io/data-visualization-with-D3-and-chart/Chart-Projects/1-dashboard/",
                 img: "./images/projects/db.png"
+            },
+            {
+                id: "22",
+                title: "Memory Game",
+                description: "A simple memory game built with react.",
+                url: "https://memory-game.onrender.com/",
+                img: "./images/projects/mg.png"
             }
         ]
     }
