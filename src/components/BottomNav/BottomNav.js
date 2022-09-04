@@ -7,23 +7,23 @@ class BottomNav extends Component {
         return (
             <div>
                 <div className="bottom-nav hide-on-large-only">
-                    <NavLink className="" to="/contact">
+                    <NavLink aria-label="Contact" className="" to="/contact">
                         <i className="fa fa-phone"></i>
                         <span>contact</span>
                     </NavLink>
-                    <NavLink className="" to="/projects">
+                    <NavLink aria-label="Projects" className="" to="/projects">
                         <i className="fa fa-calendar-check"></i>
                         <span>projects</span>
                     </NavLink>
-                    <NavLink className="" to="/">
+                    <NavLink aria-label="Home" className="" to="/">
                         <i className="fa fa-home"></i>
                         <span>home</span>
                     </NavLink>
-                    <NavLink className="" to="/blog">
+                    <NavLink aria-label="Blog" className="" to="/blog">
                         <i className="fa fa-newspaper"></i>
                         <span>blog</span>
                     </NavLink>
-                    <NavLink className="" to="/about">
+                    <NavLink aria-label="About" className="" to="/about">
                         <i className="fa fa-info"></i>
                         <span>about</span>
                     </NavLink>
