@@ -4,25 +4,26 @@ main.about{
     justify-content: center;
     min-height: 100vh;
     width: 100%;
-    padding: 100px 0;
+    padding: 100px 0 0 0;
 }
 main.about h1{
     color: var(--pri);
     font-size: 40px;
     letter-spacing: 1px;
     margin: 10px auto;
+    cursor: default;
 }
 main.about h2{
     color: var(--pri);
     font-size: 35px;
     letter-spacing: 1px;
     margin: 10px auto;
+    cursor: default;
 }
 main.about p{
     color: var(--font);
     letter-spacing: 0.6px;
 }
-
 .right-left{
     display: flex;
     flex-direction: row;
@@ -34,32 +35,19 @@ main.about p{
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 30px;
+    justify-content: flex-start;
+    padding: 30px 0 30px 30px;
     box-sizing: border-box;
     margin: 0 auto;
 }
 .left-section img{
     width: 100%;
     margin: 0px auto 16px auto;
-    transform: scale(1) translateY(0);
-    -webkit-transform: scale(1) translateY(0);
-    -moz-transform: scale(1) translateY(0);
-    -ms-transform: scale(1) translateY(0);
-    -o-transform: scale(1) translateY(0);
-    transition-duration: 0.3s;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
-}
-.left-section img:hover{
-    transform: scale(1.05) translateY(-10px);
-    -webkit-transform: scale(1.05) translateY(-10px);
-    -moz-transform: scale(1.05) translateY(-10px);
-    -ms-transform: scale(1.05) translateY(-10px);
-    -o-transform: scale(1.05) translateY(-10px);
 }
 .left-section p, .left-section h2{
     margin: 2px 0 6px 0;
@@ -125,20 +113,19 @@ main.about p{
 main.about .text-center{
     text-align: center;
 }
-
-
 main.about .skills-container{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
 }
 main.about .skill{
+    width: calc((100% - 50px) / 6);
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px;
-    padding: 0 26px;
+    padding: 12px 24px;
     height: 80px;
     box-sizing: border-box;
     background-color: var(--nav);
@@ -174,10 +161,33 @@ main.about .skill h4{
     color: var(--pri);
     font-size: 20px;
     transition-duration: 0.2s;
+    cursor: default;
 }
-
-
-
+@media (max-width: 1351px){
+    main.about .skill{
+        width: calc((100% - 40px) / 5);
+    }
+}
+@media (max-width: 1127px){
+    main.about .skill{
+        width: calc((100% - 30px) / 4);
+    }
+}
+@media (max-width: 904px){
+    main.about .skill{
+        width: calc((100% - 20px) / 3);
+    }
+}
+@media (max-width: 680px){
+    main.about .skill{
+        width: calc((100% - 10px) / 2);
+    }
+}
+@media (max-width: 457px){
+    main.about .skill{
+        width: calc((100% - 0px) / 1);
+    }
+}
 @media screen and (max-width: 900px) {
     .right-left{
         flex-direction: column;
@@ -186,25 +196,10 @@ main.about .skill h4{
         width: 96%;
     }
     .left-section{
-        width: 90%;
+        width: 96%;
+        padding: 10px;
     }
     .left-section img{
         width: 100%;
-    }
-
-    main.about .skills-container{
-        flex-direction: column;
-    }
-    main.about .skill{
-        padding: 10px;
-        height: 86px;
-    }
-    main.about .skill div{
-        width: 100px;
-    }
-    main.about .skill div img{
-        height: 50px;
-        width: auto;
-        padding: 1px;
     }
 }

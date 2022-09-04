@@ -24,8 +24,13 @@ class TopNav extends Component {
         return (
             <header>
                 <nav>
-                    <div className="logo">
-                        <NavLink onClick={this.state.opened ? this.toggle : null} to="/"><span>M</span>y <span>P</span>ortfolio</NavLink>
+                    <div className="navbar">
+                        <div className="logo">
+                            <NavLink onClick={this.state.opened ? this.toggle : null} to="/"><span>M</span>y <span>P</span>ortfolio</NavLink>
+                        </div>
+                        <div className="nav-btn">
+                            <button type="button" onClick={this.toggle}><i className={this.state.opened ? "nav-toggler fa fa-close" : "nav-toggler fa fa-bars"}></i></button>
+                        </div>
                     </div>
                     <div className={this.state.opened ? "links opened" : "links closed"}>
                         <div>
@@ -36,9 +41,6 @@ class TopNav extends Component {
                             <NavLink onClick={this.state.opened ? this.toggle : null} className="link" to="/contact"><i className="fa fa-phone"></i> Contact</NavLink>
                         </div>
                         <Outlet/>
-                    </div>
-                    <div className="nav-btn">
-                        <button type="button" onClick={this.toggle}><i className={this.state.opened ? "nav-toggler fa fa-close" : "nav-toggler fa fa-bars"}></i></button>
                     </div>
                 </nav>
             </header>
