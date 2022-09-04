@@ -13,7 +13,7 @@ import Blog from "./components/Blog/Blog"
 import Contact from "./components/Contact/Contact"
 import NoPage from "./components/NoPage/NoPage"
 import DetermineBlog from "./components/Blog/CurrentBlog"
-
+import ScrollToTopOnNavigation from "./components/ScrollToTopOnNavigation"
 
 class App extends Component {
   render(){
@@ -21,6 +21,7 @@ class App extends Component {
       <BrowserRouter>
         <>
           <TopNav/>
+          <ScrollToTopOnNavigation/>
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/about" element={<About/>} />

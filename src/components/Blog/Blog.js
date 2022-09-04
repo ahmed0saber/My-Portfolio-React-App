@@ -30,7 +30,7 @@ class Blog extends Component {
     }
     render(){
         return (
-            <main className="projects" data-aos="fade-right">
+            <main className="projects">
                 <h1>My Blog</h1>
                 <section className="projects-container">
                     <OnePost data={this.state.posts}/>

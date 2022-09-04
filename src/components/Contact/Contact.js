@@ -16,7 +16,7 @@ class Contact extends Component {
     }
 
     formSubmit = () => {
-        if(this.state.name == '' | this.state.email == '' | this.state.msg == ''){
+        if(this.state.name === '' | this.state.email === '' | this.state.msg === ''){
             alert("Please fill all fields.")
         }else{
             fetch('https://formsubmit.co/ajax/ahmed0saber33@gmail.com', {
@@ -36,7 +36,7 @@ class Contact extends Component {
 
     render(){
         return (
-            <main className="contact" data-aos="fade-right">
+            <main className="contact">
                 <section className="flexed">
                     <div>
                         <h1>Contact me</h1>
@@ -45,10 +45,10 @@ class Contact extends Component {
                         <p>Phone: +20 120 861 1892</p>
                         <p>Gmail: ahmed0saber33@gmail.com</p>
                         <section className="social-media-icons">
-                                <a Style="--ahmed: #00e" rel="noreferrer" target="_blank" href="https://www.facebook.com/profile.php?id=100004875915808"><i className="fa fa-facebook"></i></a>
-                                <a Style="--ahmed: #0c0" rel="noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=+201208611892&text=Hi"><i className="fa fa-whatsapp"></i></a>
-                                <a Style="--ahmed: #0bb" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/ahmed0saber/"><i className="fa fa-linkedin"></i></a>
-                                <a Style="--ahmed: #b0b" rel="noreferrer" target="_blank" href="https://github.com/ahmed0saber"><i className="fa fa-github"></i></a>
+                            <a style={{"--color": "#00e"}} rel="noreferrer" target="_blank" href="https://www.facebook.com/profile.php?id=100004875915808"><i className="fa fa-facebook"></i></a>
+                            <a style={{"--color": "#0c0"}} rel="noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=+201208611892&text=Hi"><i className="fa fa-whatsapp"></i></a>
+                            <a style={{"--color": "#0bb"}} rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/ahmed0saber/"><i className="fa fa-linkedin"></i></a>
+                            <a style={{"--color": "#b0b"}} rel="noreferrer" target="_blank" href="https://github.com/ahmed0saber"><i className="fa fa-github"></i></a>
                         </section>
                     </div>
                     <div className="form">

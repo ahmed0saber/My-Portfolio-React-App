@@ -4,12 +4,12 @@ header{
     z-index: 99;
 }
 nav{
-    padding: 0px 0px 0px 10px;
     background-color: var(--nav);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 10px;
+    padding: 10px;
+    border-bottom: #f7f7f732 1px solid;
 }
 nav .logo{
     font-size: 26px;
@@ -26,21 +26,6 @@ nav .logo a{
     color: var(--font);
     text-decoration: none;
 }
-nav .logo a:hover{
-    animation: reArrange 1.2s linear infinite;
-    -webkit-animation: reArrange 1.2s linear infinite;
-}
-@keyframes reArrange {
-    0%{
-        letter-spacing: 0.2px;
-    }
-    50%{
-        letter-spacing: 3px;
-    }
-    100%{
-        letter-spacing: 0.2px;
-    }
-}
 nav .logo a span{
     color: var(--pri);
     transition-duration: 0.4s;
@@ -52,28 +37,6 @@ nav .links{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-nav .links.opened{
-    z-index: 1;
-    display: flex;
-    animation: navOpen 0.4s linear 1;
-    -webkit-animation: navOpen 0.4s linear 1;
-}
-@keyframes navOpen {
-    0%{
-        transform: translateY(-600px);
-        -webkit-transform: translateY(-600px);
-        -moz-transform: translateY(-600px);
-        -ms-transform: translateY(-600px);
-        -o-transform: translateY(-600px);
-    }
-    100%{
-        transform: translateY(0px);
-        -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-        -o-transform: translateY(0px);
-    }
 }
 nav .link{
     color: var(--font);
@@ -122,18 +85,40 @@ nav .nav-btn i.fa{
 nav .links a i{
     margin: 0px 2px;
 }
-
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 @media screen and (max-width: 900px) {
-    nav.opened{
-        display: flex;
+    nav{
+        padding: 0px;
+    }
+    .navbar{
+        width: 100%;
+        z-index: 2;
+        background-color: var(--nav);
+        padding: 10px;
     }
     nav .links{
-        display: none;
         position: absolute;
-        top: 100%;
+        top: calc(100% - 1px);
         background-color: var(--nav);
         width: 100%;
         left: 0;
+        transition-duration: 0.4s;
+        border-bottom: #f7f7f732 1px solid;
+        z-index: 1;
+    }
+    nav .links.closed{
+        translate: 0% -200%;
+    }
+    nav .links.opened{
+        translate: 0% 0%;
+    }
+    nav.opened{
+        display: flex;
     }
     nav .links a{
         display: block;
