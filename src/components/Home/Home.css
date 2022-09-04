@@ -151,73 +151,23 @@ section.container.home .home-btns{
 }
 section.container.home .home-btns a{
     text-decoration: none;
-}
-.cp-btn{
-    all: unset;
-    position: relative;
     background: var(--nav);
     padding: 1em 1.5em;
-    color: var(--font);
+    color: var(--pri);
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 2px;
     word-spacing: 4px;
     z-index: 1;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    border: 2px solid var(--pri);
+    transition-duration: 0.2s;
 }
-.cp-btn:hover:before{
-    animation: none;
-    -webkit-animation: none;
-}
-.cp-btn:before{
-    content: "";
-    position: absolute;
-    animation: rainbow-border 1.4s linear infinite;
-    -webkit-animation: rainbow-border 1.4s linear infinite;
-    background: linear-gradient(70deg,#4a4df1,#47cf73,#0ebeff,#ae63e4,#4a4df1,#47cf73,#0ebeff,#ae63e4);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-size: 200% 200%;
-    bottom: 0;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-}
-.cp-btn:after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    width: auto;
-    z-index: -1;
-    margin: 3px;
-    background: inherit;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-}
-@keyframes rainbow-border{
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 200% 50%;
-    }
+section.container.home .home-btns a:hover{
+    background-color: var(--pri);
+    color: var(--nav);
 }
