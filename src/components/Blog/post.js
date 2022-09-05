@@ -17,6 +17,9 @@ class OnePost extends Component {
                         </div>
                         <NavLink to={`/blog/${post.id}`}>Read More</NavLink>
                     </div>
+                    <div className="project-index">
+                        {post.id} / {posts.length}
+                    </div>
                     <Outlet/>
                 </div>
             )

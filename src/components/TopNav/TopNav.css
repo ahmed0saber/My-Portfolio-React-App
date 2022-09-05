@@ -19,8 +19,6 @@ nav .logo{
     justify-content: center;
 }
 nav .logo a{
-    animation: reArrange 1s linear 1;
-    -webkit-animation: reArrange 1s linear 1;
     letter-spacing: 0.2px;
     cursor: default;
     color: var(--font);
@@ -112,10 +110,18 @@ nav .links a i{
         z-index: 1;
     }
     nav .links.closed{
-        translate: 0% -200%;
+        transform: translateY(-200%);
+        -webkit-transform: translateY(-200%);
+        -moz-transform: translateY(-200%);
+        -ms-transform: translateY(-200%);
+        -o-transform: translateY(-200%);
     }
     nav .links.opened{
-        translate: 0% 0%;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
     }
     nav.opened{
         display: flex;

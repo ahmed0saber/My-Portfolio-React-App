@@ -158,6 +158,97 @@ class Projects extends Component {
                 description: "A simple memory game built with react.",
                 url: "https://memory-game.onrender.com/",
                 img: "./images/projects/mg.png"
+            },
+            {
+                id: "23",
+                title: "ToGraph",
+                description: "A website that converts plots into graph.",
+                url: "https://ahmed0saber.github.io/ToGraph/",
+                img: "./images/projects/to-graph.png"
+            },
+            {
+                id: "24",
+                title: "TestMode",
+                description: "A website where you can test your skills in some technologies related to programming and get certified when you pass any test.",
+                url: "https://testmode.vercel.app/",
+                img: "./images/projects/testmode.png"
+            },
+            {
+                id: "25",
+                title: "Translatable Article",
+                description: "A simple page where user can switch between Arabic and English.",
+                url: "https://translatable-article.onrender.com/",
+                img: "./images/projects/translatable-article.png"
+            },
+            {
+                id: "26",
+                title: "WhatsApp Exported Chat Viewer",
+                description: "A website that converts WhatsApp chats exported as text file into a chat for easier view, and adds the ability to search for certain messages.",
+                url: "https://ahmed0saber.github.io/whatsapp-exported-chat-viewer/",
+                img: "./images/projects/whatsapp-chat-viewer.png"
+            },
+            {
+                id: "27",
+                title: "WhatsApp Form Creator",
+                description: "A website where you can create a form and share it with others to receive their submits on WhatsApp.",
+                url: "https://ahmed0saber.github.io/whatsapp-form-creator/",
+                img: "./images/projects/whatsapp-form-creator.png"
+            },
+            {
+                id: "28",
+                title: "Connect 4",
+                description: "A simple connect 4 game.",
+                url: "https://ahmed0saber.github.io/connect-4/",
+                img: "./images/projects/connect-4.png"
+            },
+            {
+                id: "29",
+                title: "Wheel Of Fortune",
+                description: "A simple wheel of fortune game.",
+                url: "https://ahmed0saber.github.io/wheel-of-fortune/",
+                img: "./images/projects/wheel-of-fortune.png"
+            },
+            {
+                id: "30",
+                title: "Excel Sheet Generator",
+                description: "A website where user can create a table with certain number of rows and columns, edit them, then download this table as excel sheet.",
+                url: "https://ahmed0saber.github.io/excel-sheet-generator/",
+                img: "./images/projects/excel-sheet-generator.png"
+            },
+            {
+                id: "31",
+                title: "Photo Editor",
+                description: "A website where user can edit his photos online and download them.",
+                url: "https://ahmed0saber.github.io/photo-editor/",
+                img: "./images/projects/photo-editor.png"
+            },
+            {
+                id: "32",
+                title: "Wikipedia Search Engine",
+                description: "A website where user can search for certain topics on Wikipedia.",
+                url: "https://ahmed0saber.github.io/wikipedia-search-engine/",
+                img: "./images/projects/wikipedia-search-engine.png"
+            },
+            {
+                id: "33",
+                title: "Turn Based Game",
+                description: "A simple game where 2 local players can play together.",
+                url: "https://ahmed0saber.github.io/turn-based-role-playing-game/",
+                img: "./images/projects/turn-based-game.png"
+            },
+            {
+                id: "34",
+                title: "Todo List",
+                description: "A website where user can store his tasks, mark them as completed, or delete them.",
+                url: "https://my-todo-tasks.onrender.com/",
+                img: "./images/projects/todo-list.png"
+            },
+            {
+                id: "35",
+                title: "E-Commerce",
+                description: "A simple website where user can view products, add or remove them from cart.",
+                url: "https://my-simple-ecommerce-site.onrender.com/",
+                img: "./images/projects/e-commerce.png"
             }
         ]
     }
