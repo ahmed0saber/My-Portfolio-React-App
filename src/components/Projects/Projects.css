@@ -99,6 +99,24 @@ main.projects .projects-container{
 .project a:hover{
     opacity: 0.8;
 }
+.project-index{
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nav);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: var(--pri);
+    line-height: 0px;
+}
 @media(max-width: 1400px){
     main.projects .project{
         width: calc((100% - 20px) / 3);

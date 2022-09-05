@@ -15,7 +15,10 @@ class OneProject extends Component {
                             <p>{project.description}</p>
                         </div>
                         <a href={project.url} rel="noreferrer" target="_blank">View Demo</a>
-                        </div>
+                    </div>
+                    <div className="project-index">
+                        {project.id} / {projects.length}
+                    </div>
                 </div>
             )
         })
