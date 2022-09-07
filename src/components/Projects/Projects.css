@@ -52,6 +52,8 @@ main.projects .projects-container{
 }
 .project .img-container{
     overflow: hidden;
+    min-height: 38px;
+    background: var(--font);
 }
 .project:not(.currentproject):hover img{
     transform: scale(1.2);
@@ -78,11 +80,9 @@ main.projects .projects-container{
     font-size: 22px;
     margin: 2px 0 6px 0;
 }
-.project a{
+.project a.pri-btn{
     text-decoration: none;
     padding: 8px 24px;
-    margin: 12px 0 4px 0;
-    display: inline-block;
     background-color: var(--pri);
     color: var(--nav);
     font-size: 18px;
@@ -91,6 +91,10 @@ main.projects .projects-container{
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+}
+.project a.sub-btn{
+    color: var(--pri);
+    font-size: 30px;
 }
 .project a:active{
     color: var(--pri);
@@ -116,6 +120,15 @@ main.projects .projects-container{
     -o-border-radius: 3px;
     color: var(--pri);
     line-height: 0px;
+}
+.btns-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    margin: 12px 0 0 0;
 }
 @media(max-width: 1400px){
     main.projects .project{

@@ -53,16 +53,15 @@ main.blog p{
 }
 .post .img-container{
     overflow: hidden;
+    min-height: 38px;
+    background: var(--font);
 }
-.post:not(.currentPost):hover img{
+.post:hover img{
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
-}
-.currentPost{
-    max-width: 2000px;
 }
 .post img{
     width: 100%;
@@ -79,11 +78,9 @@ main.blog p{
     font-size: 22px;
     margin: 2px 0 6px 0;
 }
-.post a{
+.post a.pri-btn{
     text-decoration: none;
     padding: 8px 24px;
-    margin: 12px 0 4px 0;
-    display: inline-block;
     background-color: var(--pri);
     color: var(--nav);
     font-size: 18px;
@@ -93,17 +90,14 @@ main.blog p{
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 }
+.post a.sub-btn{
+    color: var(--pri);
+    font-size: 30px;
+}
 .post a:active{
     color: var(--pri);
     background-color: var(--background);
 }
 .post a:hover{
     opacity: 0.8;
-}
-.currentPost ol{
-    color: var(--font);
-    margin: 0 0 0 14px;
-}
-.currentPost h5, .currentPost h3{
-    color: var(--pri);
 }

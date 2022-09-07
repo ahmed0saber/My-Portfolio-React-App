@@ -20,8 +20,7 @@ class Home extends Component {
                             <a aria-label="GitHub" style={{"--color": "#b0b"}} rel="noreferrer" target="_blank" href="https://github.com/ahmed0saber"><i className="fa fa-github"></i></a>
                         </section>
                         <section className="home-btns">
-                            {/* <a rel="noreferrer" target="_self" href="https://drive.google.com/u/0/uc?id=1uCgR6ZYGdkmEyA4AwWVI4C1d-8VRsTY4&export=download"><button className="cp-btn">Download My Resume</button></a> */}
-                            <a rel="noreferrer" target="_self" href="https://drive.google.com/u/0/uc?id=1uCgR6ZYGdkmEyA4AwWVI4C1d-8VRsTY4&export=download">Download My Resume</a>
+                            <a rel="noreferrer" target="_self" href="https://drive.google.com/u/0/uc?id=1uCgR6ZYGdkmEyA4AwWVI4C1d-8VRsTY4&export=download" download>Download My Resume</a>
                         </section>
                     </section>
                 </section>
