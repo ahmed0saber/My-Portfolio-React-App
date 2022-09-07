@@ -12,7 +12,6 @@ import Projects from "./components/Projects/Projects"
 import Blog from "./components/Blog/Blog"
 import Contact from "./components/Contact/Contact"
 import NoPage from "./components/NoPage/NoPage"
-import DetermineBlog from "./components/Blog/CurrentBlog"
 import ScrollToTopOnNavigation from "./components/ScrollToTopOnNavigation"
 
 class App extends Component {
@@ -27,7 +26,6 @@ class App extends Component {
             <Route path="/about" element={<About/>} />
             <Route path="/projects" element={<Projects/>} />
             <Route path="/blog" element={<Blog/>} />
-            <Route path="/blog/:id" element={<DetermineBlog/>} />
             <Route path="/contact" element={<Contact/>} />
             <Route path="*" element={<NoPage/>} />
           </Routes>

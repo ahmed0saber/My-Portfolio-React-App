@@ -15,7 +15,10 @@ class OnePost extends Component {
                             <h3>{post.title}</h3>
                             <div dangerouslySetInnerHTML={{ __html: post.description }} />
                         </div>
-                        <NavLink to={`/blog/${post.id}`}>Read More</NavLink>
+                        <div className="btns-row">
+                            <a className="pri-btn" rel="noreferrer" target="_self" href={post.downloadUrl} download>Download as pdf</a>
+                            <a className="sub-btn" rel="noreferrer" target="_blank" href={post.linkedinUrl}><i className="fa fa-linkedin"></i></a>
+                        </div>
                     </div>
                     <div className="project-index">
                         {post.id} / {posts.length}
