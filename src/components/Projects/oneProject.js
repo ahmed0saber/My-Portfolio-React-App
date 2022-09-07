@@ -15,8 +15,8 @@ class OneProject extends Component {
                             <p>{project.description}</p>
                         </div>
                         <div className="btns-row">
-                            <a className="pri-btn" href={project.url} rel="noreferrer" target="_blank">View Demo</a>
-                            <a className="sub-btn" rel="noreferrer" target="_blank" href={project.src}><i className="fa fa-github"></i></a>
+                            <a className="pri-btn" href={project.demoUrl} rel="noreferrer" target="_blank">View Demo</a>
+                            <a className="sub-btn" rel="noreferrer" target="_blank" href={project.githubUrl}><i className="fa fa-github"></i></a>
                         </div>
                     </div>
                     <div className="project-index">
