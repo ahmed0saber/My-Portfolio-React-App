@@ -65,6 +65,7 @@ main.contact .form button{
     width: 96%;
     box-sizing: border-box;
     margin: 4px;
+    cursor: pointer;
 }
 main.contact .form button:hover{
     opacity: 0.8;
@@ -73,7 +74,99 @@ main.contact .form button:active{
     background-color: var(--nav);
     color: var(--pri);
 }
-
+.custom-alert-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f7f7f732;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    z-index: 999999;
+    box-sizing: border-box;
+}
+.custom-alert-overlay.shown{
+    display: flex;
+}
+.custom-alert{
+    padding: 10px;
+    background-color: var(--font);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0px 0px 2px 2px #32323232;
+    transition-duration: 10000s;
+}
+.custom-alert-overlay.shown .custom-alert{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    animation: startScaling 0.3s 1;
+    -webkit-animation: startScaling 0.3s 1;
+}
+@keyframes startScaling {
+    0%{
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
+    50%{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+.custom-alert-head{
+    font-size: 28px;
+    border-bottom: 2px solid #32323232;
+    padding: 0 0 2px 0;
+}
+.custom-alert-body{
+    margin: 12px 0 0 0;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+}
+.custom-alert-body button{
+    padding: 8px 30px;
+    background-color: var(--nav);
+    color: var(--font);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.custom-alert-body button:hover{
+    opacity: 0.8;
+}
 @media screen and (max-width: 900px) {
     main.contact section.flexed{
         flex-direction: column;
