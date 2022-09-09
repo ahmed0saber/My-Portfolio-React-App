@@ -54,6 +54,11 @@ main.projects .projects-container{
     overflow: hidden;
     min-height: 38px;
     background: var(--font);
+    border-radius: 4px 4px 0px 0px;
+    -webkit-border-radius: 4px 4px 0px 0px;
+    -moz-border-radius: 4px 4px 0px 0px;
+    -ms-border-radius: 4px 4px 0px 0px;
+    -o-border-radius: 4px 4px 0px 0px;
 }
 .project:not(.currentproject):hover img{
     transform: scale(1.2);
@@ -68,11 +73,11 @@ main.projects .projects-container{
 .project img{
     width: 100%;
     transition-duration: 0.2s;
-    border-radius: 3px 3px 0 0;
-    -webkit-border-radius: 3px 3px 0 0;
-    -moz-border-radius: 3px 3px 0 0;
-    -ms-border-radius: 3px 3px 0 0;
-    -o-border-radius: 3px 3px 0 0;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
     display: flex;
 }
 .project h3{
@@ -86,11 +91,11 @@ main.projects .projects-container{
     background-color: var(--pri);
     color: var(--nav);
     font-size: 18px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 .project a.sub-btn{
     color: var(--pri);
@@ -113,11 +118,11 @@ main.projects .projects-container{
     justify-content: center;
     align-items: center;
     background-color: var(--nav);
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
     color: var(--pri);
     line-height: 0px;
 }

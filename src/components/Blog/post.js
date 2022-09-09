@@ -1,19 +1,18 @@
 import React, { Component } from "react";
-import { Outlet, NavLink } from "react-router-dom";
 
 class OnePost extends Component {
     render(){
         const posts = this.props.data
-        const allPosts = posts.map( post => {
+        const allPosts = posts.map((post, index) => {
             return(
-                <div className="post" key={post.id}>
+                <div className="post" key={index}>
                     <div className="img-container">
                         <img src={post.img} alt="Post"/>
                     </div>
                     <div className="post-details">
                         <div>
                             <h3>{post.title}</h3>
-                            <div dangerouslySetInnerHTML={{ __html: post.description }} />
+                            <p>{post.description}</p>
                         </div>
                         <div className="btns-row">
                             <a className="pri-btn" rel="noreferrer" target="_self" href={post.downloadUrl} download>Download as pdf</a>
@@ -21,9 +20,8 @@ class OnePost extends Component {
                         </div>
                     </div>
                     <div className="project-index">
-                        {post.id} / {posts.length}
+                        {index + 1} / {posts.length}
                     </div>
-                    <Outlet/>
                 </div>
             )
         })

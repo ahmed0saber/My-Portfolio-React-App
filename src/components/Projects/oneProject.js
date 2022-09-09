@@ -3,9 +3,9 @@ import React, { Component } from "react";
 class OneProject extends Component {
     render(){
         const projects = this.props.data
-        const allProjects = projects.map( project => {
+        const allProjects = projects.map((project, index) => {
             return(
-                <div className="project" key={project.id}>
+                <div className="project" key={index}>
                     <div className="img-container">
                         <img src={project.img} alt="Project"/>
                     </div>
@@ -20,7 +20,7 @@ class OneProject extends Component {
                         </div>
                     </div>
                     <div className="project-index">
-                        {project.id} / {projects.length}
+                        {index + 1} / {projects.length}
                     </div>
                 </div>
             )
