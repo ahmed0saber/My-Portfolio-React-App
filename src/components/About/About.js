@@ -2,6 +2,74 @@ import React, { Component } from "react";
 import "./About.css"
 
 class About extends Component {
+    state = {
+        skills: [
+            {
+                name: "HTML5",
+                img: "html.png"
+            },
+            {
+                name: "CSS3",
+                img: "css.png"
+            },
+            {
+                name: "JavaScript",
+                img: "js.jpg"
+            },
+            {
+                name: "JSON",
+                img: "json.png"
+            },
+            {
+                name: "jQuery",
+                img: "jquery.png"
+            },
+            {
+                name: "Bootstrap",
+                img: "bootstrap.png"
+            },
+            {
+                name: "Materialize",
+                img: "matcss.png"
+            },
+            {
+                name: "Sass",
+                img: "sass.png"
+            },
+            {
+                name: "Pug",
+                img: "pugjs.png"
+            },
+            {
+                name: "D3.js",
+                img: "d3.png"
+            },
+            {
+                name: "Chart.js",
+                img: "chartjs.svg"
+            },
+            {
+                name: "ElectronJS",
+                img: "electron.png"
+            },
+            {
+                name: "TypeScript",
+                img: "ts.png"
+            },
+            {
+                name: "React",
+                img: "react.png"
+            },
+            {
+                name: "Redux",
+                img: "redux.png"
+            },
+            {
+                name: "Next",
+                img: "next.png"
+            },
+        ]
+    }
     render(){
         return (
             <main className="about">
@@ -42,102 +110,14 @@ class About extends Component {
                 <section>
                     <h2 className="text-center">My Skills</h2>
                     <section className="skills-container">
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/html.png" alt="HTML5"/>
+                        {this.state.skills.map((skill, index) => 
+                            <div className="skill" key={index}>
+                                <div>
+                                    <img src={`./images/skills/${skill.img}`} alt={skill.name}/>
+                                </div>
+                                <h4>{skill.name}</h4>
                             </div>
-                            <h4>HTML5</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/css.png" alt="CSS3"/>
-                            </div>
-                            <h4>CSS3</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/js.jpg" alt="JavaScript (ES6)"/>
-                            </div>
-                            <h4>JavaScript</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/json.png" alt="JSON"/>
-                            </div>
-                            <h4>JSON</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/jquery.png" alt="jQuery"/>
-                            </div>
-                            <h4>jQuery</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/bootstrap.png" alt="Bootstrap"/>
-                            </div>
-                            <h4>Bootstrap</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/matcss.png" alt="Materialize"/>
-                            </div>
-                            <h4>Materialize</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/sass.png" alt="Sass"/>
-                            </div>
-                            <h4>Sass</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/pugjs.png" alt="Pug"/>
-                            </div>
-                            <h4>Pug</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/d3.png" alt="D3JS"/>
-                            </div>
-                            <h4>D3.js</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/chartjs.svg" alt="ChartJS"/>
-                            </div>
-                            <h4>Chart.js</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/electron.png" alt="ElectronJS"/>
-                            </div>
-                            <h4>ElectronJS</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/ts.png" alt="TypeScript"/>
-                            </div>
-                            <h4>TypeScript</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/react.png" alt="React"/>
-                            </div>
-                            <h4>React</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/redux.png" alt="Redux"/>
-                            </div>
-                            <h4>Redux</h4>
-                        </div>
-                        <div className="skill">
-                            <div>
-                                <img src="./images/skills/next.png" alt="Next"/>
-                            </div>
-                            <h4>Next</h4>
-                        </div>
+                        )}
                     </section>
                 </section>
             </main>
