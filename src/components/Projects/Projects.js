@@ -113,7 +113,7 @@ class Projects extends Component {
             {
                 title: "Online Quiz",
                 description: "It's just an one-page web-skills quiz with leaderboard. Using Leaderboard API created by Ahmed Yasser.",
-                demoUrl: "https://ahmed0saber.github.io/online-quiz/html.html",
+                demoUrl: "https://ahmed0saber.github.io/online-quiz/",
                 githubUrl: "https://github.com/ahmed0saber/online-quiz",
                 img: "./images/projects/oq.png"
             },
