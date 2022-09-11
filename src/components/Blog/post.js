@@ -15,7 +15,11 @@ class OnePost extends Component {
                             <p>{post.description}</p>
                         </div>
                         <div className="btns-row">
-                            <a className="pri-btn" rel="noreferrer" target="_self" href={post.downloadUrl} download>Download as pdf</a>
+                            {
+                                post.downloadUrl.length > 0 ? 
+                                <a className="pri-btn" rel="noreferrer" target="_self" href={post.downloadUrl} download>Download as PDF</a> 
+                                : <span>No PDF Found</span>
+                            }
                             <a className="sub-btn" rel="noreferrer" target="_blank" href={post.linkedinUrl}><i className="fa fa-linkedin"></i></a>
                         </div>
                     </div>

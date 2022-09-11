@@ -32,6 +32,20 @@ class Blog extends Component {
                 "downloadUrl": "https://drive.google.com/u/0/uc?id=1DWpSOId2rV3AwoH5inmagq8z_YDBy6Yq&export=download",
                 "linkedinUrl": "https://www.linkedin.com/posts/ahmed0saber_frontend-web-development-roadmap-activity-6973564459692769280-R_XS?utm_source=share&utm_medium=member_desktop",
                 "description": "Technologies you need to learn to be a great frontend web developer"
+            },
+            {
+                "title": "Some SEO tips you need to know",
+                "img": "../images/posts/seo.svg",
+                "downloadUrl": "",
+                "linkedinUrl": "https://www.linkedin.com/posts/ahmed0saber_seo-searchengineoptimization-html-activity-6954132057870471168-ckJf?utm_source=share&utm_medium=member_desktop",
+                "description": "Your guide to improve search engine optimization for your websites"
+            },
+            {
+                "title": "How to gain experience without work",
+                "img": "../images/posts/experience.svg",
+                "downloadUrl": "",
+                "linkedinUrl": "https://www.linkedin.com/posts/ahmed0saber_ahmed0saber-activity-6974364028915597312-8O4R?utm_source=share&utm_medium=member_desktop",
+                "description": "Some different ways that can help you be more experienced"
             }
         ]
     }
