@@ -51,7 +51,7 @@ class Blog extends Component {
                 "title": "Practice coding by building projects",
                 "img": "../images/posts/practice.svg",
                 "downloadUrl": "https://drive.google.com/u/0/uc?id=1itIRfDX3OMcZ0wHE9HvNee449fjoaQ9l&export=download",
-                "linkedinUrl": "hhh",
+                "linkedinUrl": "https://www.linkedin.com/posts/ahmed0saber_frontend-projects-to-practice-activity-6975933560297783298-C6Rt?utm_source=share&utm_medium=member_desktop",
                 "description": "Some websites where you can practice coding by building projects"
             }
         ]
