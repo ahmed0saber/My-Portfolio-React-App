@@ -46,6 +46,13 @@ class Blog extends Component {
                 "downloadUrl": "",
                 "linkedinUrl": "https://www.linkedin.com/posts/ahmed0saber_ahmed0saber-activity-6974364028915597312-8O4R?utm_source=share&utm_medium=member_desktop",
                 "description": "Some different ways that can help you be more experienced"
+            },
+            {
+                "title": "Practice coding by building projects",
+                "img": "../images/posts/practice.svg",
+                "downloadUrl": "https://drive.google.com/u/0/uc?id=1itIRfDX3OMcZ0wHE9HvNee449fjoaQ9l&export=download",
+                "linkedinUrl": "hhh",
+                "description": "Some websites where you can practice coding by building projects"
             }
         ]
     }
