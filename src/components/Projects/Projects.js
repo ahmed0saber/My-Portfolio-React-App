@@ -77,7 +77,7 @@ class Projects extends Component {
             },
             {
                 title: "Todo List",
-                description: "A website where user can store his tasks, mark them as completed, or delete them.",
+                description: "A progressive web application where user can store his tasks, mark them as completed, or delete them.",
                 demoUrl: "https://my-todo-tasks.onrender.com/",
                 githubUrl: "https://github.com/ahmed0saber/todo-pwa-in-react",
                 img: "./images/projects/todo-list.png"
@@ -249,6 +249,20 @@ class Projects extends Component {
                 demoUrl: "https://ahmed0saber.github.io/turn-based-role-playing-game/",
                 githubUrl: "https://github.com/ahmed0saber/turn-based-role-playing-game",
                 img: "./images/projects/turn-based-game.png"
+            },
+            {
+                title: "Todo List",
+                description: "A website where user can store his tasks, mark them as completed, or delete them.",
+                demoUrl: "https://ahmed0saber.github.io/todo-app-with-typescript/",
+                githubUrl: "https://github.com/ahmed0saber/todo-app-with-typescript",
+                img: "./images/projects/todo-list-ts.png"
+            },
+            {
+                title: "Quote Generator",
+                description: "A simple quote generator built with TypeScript.",
+                demoUrl: "https://ahmed0saber.github.io/quote-generator-with-typescript/",
+                githubUrl: "https://github.com/ahmed0saber/quote-generator-with-typescript",
+                img: "./images/projects/qg-ts.png"
             }
         ]
     }

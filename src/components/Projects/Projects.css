@@ -101,7 +101,7 @@ main.projects .projects-container{
     color: var(--pri);
     font-size: 30px;
 }
-.project a:active{
+.project a:active:not(a.sub-btn){
     color: var(--pri);
     background-color: var(--background);
 }

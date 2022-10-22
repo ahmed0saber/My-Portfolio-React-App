@@ -68,6 +68,22 @@ class About extends Component {
                 name: "Next",
                 img: "next.png"
             },
+            {
+                name: "Styled Components",
+                img: "styledc.png"
+            },
+            {
+                name: "npm",
+                img: "npm.svg"
+            },
+            {
+                name: "Vite",
+                img: "vite.png"
+            },
+            {
+                name: "Figma",
+                img: "figma.svg"
+            }
         ]
     }
     render(){
