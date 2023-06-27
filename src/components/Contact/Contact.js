@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import emailjs from '@emailjs/browser';
 import "./Contact.css"
 
 class Contact extends Component {
@@ -6,51 +7,64 @@ class Contact extends Component {
         formData: {
             name: '',
             email: '',
-            msg: ''
+            msg: '',
         },
         alert: {
             head: "",
             body: "",
-            shown: false
+            shown: false,
         }
     }
     handleChange = (e) => {
         this.setState({
             formData: {
                 ...this.state.formData,
-                [e.target.id]: e.target.value
+                [e.target.id]: e.target.value,
             }
         })
     }
     formSubmit = () => {
-        if(this.state.formData.name.trim().length === 0 || this.state.formData.email.trim().length === 0 || this.state.formData.msg.trim().length === 0){
+        if (this.state.formData.name.trim().length === 0 || this.state.formData.email.trim().length === 0 || this.state.formData.msg.trim().length === 0) {
             this.setState({
                 alert: {
                     head: "Validation Error",
                     body: "Please fill all fields.",
-                    shown: true
+                    shown: true,
                 }
             })
             return
         }
-        fetch('https://formsubmit.co/ajax/ahmed0saber33@gmail.com', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(this.state.formData)
-        }).then(() => {
-            this.setState({
-                formData: {
-                    name: '',
-                    email: '',
-                    msg: ''
-                },
-                alert: {
-                    head: "Successfully Sent",
-                    body: "Your message has been sent successfully, thanks for contacting me.",
-                    shown: true
-                }
-            })
-        })
+        emailjs.send('service_268ugfd', 'template_tp1twcl', {
+            ...this.state.formData,
+            date: new Date(),
+        }, "lh0KP7BcJIN6ZsGFY")
+            .then(() => {
+                this.setState({
+                    formData: {
+                        name: '',
+                        email: '',
+                        msg: '',
+                    },
+                    alert: {
+                        head: "Successfully Sent",
+                        body: "Your message has been sent successfully, thanks for contacting me.",
+                        shown: true,
+                    }
+                })
+            }, () => {
+                this.setState({
+                    formData: {
+                        name: '',
+                        email: '',
+                        msg: '',
+                    },
+                    alert: {
+                        head: "Something Went Wrong",
+                        body: "Please try again later, or message me through any social platform.",
+                        shown: true,
+                    }
+                })
+            });
     }
     hideAlert = () => {
         this.setState({
@@ -59,7 +73,7 @@ class Contact extends Component {
             }
         })
     }
-    render(){
+    render() {
         return (
             <>
                 <div className={this.state.alert.shown ? "custom-alert-overlay shown" : "custom-alert-overlay"}>
@@ -82,17 +96,17 @@ class Contact extends Component {
                             <p>Phone: +20 120 861 1892</p>
                             <p>Gmail: ahmed0saber33@gmail.com</p>
                             <section className="social-media-icons">
-                                <a style={{"--color": "#00e"}} rel="noreferrer" target="_blank" href="https://www.facebook.com/profile.php?id=100004875915808"><i className="fa fa-facebook"></i></a>
-                                <a style={{"--color": "#0c0"}} rel="noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=+201208611892&text=Hi"><i className="fa fa-whatsapp"></i></a>
-                                <a style={{"--color": "#0bb"}} rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/ahmed0saber/"><i className="fa fa-linkedin"></i></a>
-                                <a style={{"--color": "#b0b"}} rel="noreferrer" target="_blank" href="https://github.com/ahmed0saber"><i className="fa fa-github"></i></a>
+                                <a style={{ "--color": "#00e" }} rel="noreferrer" target="_blank" href="https://www.facebook.com/profile.php?id=100004875915808"><i className="fa fa-facebook"></i></a>
+                                <a style={{ "--color": "#0c0" }} rel="noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=+201208611892&text=Hi"><i className="fa fa-whatsapp"></i></a>
+                                <a style={{ "--color": "#0bb" }} rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/ahmed0saber/"><i className="fa fa-linkedin"></i></a>
+                                <a style={{ "--color": "#b0b" }} rel="noreferrer" target="_blank" href="https://github.com/ahmed0saber"><i className="fa fa-github"></i></a>
                             </section>
                         </div>
                         <div className="form">
                             <p>Use a valid email address, So I can reply back.</p>
-                            <input value={this.state.formData.name} onChange={this.handleChange} type="text" id="name" placeholder="Enter your name"/>
-                            <input value={this.state.formData.email} onChange={this.handleChange} type="email" id="email" placeholder="Enter your email"/>
-                            <textarea value={this.state.formData.msg} onChange={this.handleChange} id="msg" placeholder="Enter your message"/>
+                            <input value={this.state.formData.name} onChange={this.handleChange} type="text" id="name" placeholder="Enter your name" />
+                            <input value={this.state.formData.email} onChange={this.handleChange} type="email" id="email" placeholder="Enter your email" />
+                            <textarea value={this.state.formData.msg} onChange={this.handleChange} id="msg" placeholder="Enter your message" />
                             <button onClick={this.formSubmit}>Send</button>
                         </div>
                     </section>
