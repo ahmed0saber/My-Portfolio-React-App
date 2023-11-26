@@ -71,7 +71,7 @@ class Projects extends Component {
             {
                 title: "WhatsApp Form Creator",
                 description: "A website where you can create a form and share it with others to receive their submits on WhatsApp.",
-                demoUrl: "https://ahmed0saber.github.io/whatsapp-form-creator/",
+                demoUrl: "https://whatsapp-form-creator.onrender.com/",
                 githubUrl: "https://github.com/ahmed0saber/whatsapp-form-creator",
                 img: "./images/projects/whatsapp-form-creator.png"
             },
